@@ -1,6 +1,13 @@
+import SitesList from "../features/sites/SitesList"
+
 export const SitesPage = () => {
   return (
-    <div>SitesPage</div>
+    <>
+      <div>SitesPage</div>
+      <hr />
+
+      <SitesList />
+    </>
   )
 }
 
