@@ -1,7 +1,7 @@
-interface Token {
+interface IToken {
   token: string;
 }    
 
-export interface StateAuth {
-  auth: Token;
+export interface IStateAuth {
+  auth: IToken;
 } 

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { StateAuth } from "../../interfaces/auth.interface";
+import { IStateAuth } from "../../interfaces/auth.interface";
 
 const authSlice = createSlice({
   name: "auth",
@@ -20,5 +20,5 @@ export const { setCredentials, logOut } = authSlice.actions
 
 export default authSlice.reducer
 
-export const selectCurrentToken = (state: StateAuth) => state.auth 
+export const selectCurrentToken = (state: IStateAuth) => state.auth 
 

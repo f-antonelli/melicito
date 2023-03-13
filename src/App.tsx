@@ -1,7 +1,9 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useLoginMutation } from "./features/auth/authApiSlice";
-import { selectCurrentToken, setCredentials } from "./features/auth/authSlice";
+import { setCredentials } from "./features/auth/authSlice";
+import SitesList from "./features/sites/SitesList";
+import AppRouter from "./routes/AppRouter";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -20,10 +22,10 @@ const App = () => {
   };
 
   useEffect(() => {
-   handleLogin();
+    handleLogin();
   }, []);
 
-  return <div>App</div>;
+  return <AppRouter />
 };
 
 export default App;
