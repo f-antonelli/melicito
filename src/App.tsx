@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useLoginMutation } from "./features/auth/authApiSlice";
 import { setCredentials } from "./features/auth/authSlice";
-import SitesList from "./features/sites/SitesList";
 import AppRouter from "./routes/AppRouter";
 
 const App = () => {

@@ -1,5 +1,5 @@
 import { lazy, LazyExoticComponent } from 'react';
-import { HomePage } from '../pages';
+import { HomePage, SitesPage } from '../pages';
 
 interface Route {
     path: string;
@@ -9,13 +9,13 @@ interface Route {
 
 export const routes: Route[] = [
     {
-        Component: HomePage,
-        name: 'Home',
+        Component: SitesPage,
+        name: 'Index',
         path: '/',
     },
     {
-        Component: lazy(() => import('../pages/SitesPage')),
-        name: 'Sites',
-        path: '/sites',
+        Component: lazy(() => import('../pages/HomePage')),
+        name: 'Home',
+        path: '/home',
     },
 ];

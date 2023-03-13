@@ -3,3 +3,11 @@ export interface ISite {
     id: string
     name: string
 }
+
+interface ISiteID {
+    siteID: string;
+  }    
+  
+  export interface IStateSites {
+    sites: ISiteID;
+  } 
